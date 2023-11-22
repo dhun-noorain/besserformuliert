@@ -1,0 +1,51 @@
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-lower {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-dark {
+  color: $color-dark;
+}
+
+.text-light {
+  color: $color-light;
+}
+
+.text-gray {
+  color: $color-gray;
+}
+
+.bg-dark {
+  background-color: $color-dark;
+}
+
+.bg-light {
+  background-color: $color-light;
+}
+
+.bg-gray {
+  background-color: $color-gray;
+}
