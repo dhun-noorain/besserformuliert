@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+
+  @include breakpoint(mobile) {
+    justify-content: space-between;
+    padding: .5rem 1rem;
+  }
+
+  .logo {
+    width: 6.1875rem;
+    height: 4.375rem;
+    flex-shrink: 0;
+    background-image: url('../assets/images/logo.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+  }
+
+  &__nav-toggler {
+    display: none;
+
+    @include breakpoint(mobile) {
+      width: 4rem;
+      height: 4.375rem;
+      display: block;
+      background-image: url("../assets/svgs/icon-hamburger.svg");
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: contain;
+      background-color: $color-dark;
+      border: none;
+    }
+  }
+
+  &__nav-toggler[aria-expanded="true"] {
+    @include breakpoint(mobile) {
+      background-image: url("../assets/svgs/icon-close.svg");
+    }
+  }
+
+  .nav-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 70%;
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+}

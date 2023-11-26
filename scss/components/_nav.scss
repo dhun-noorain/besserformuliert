@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 50%;
+
+  &__link {
+    color: $color-dark;
+    font-family: $font-inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    line-height: 1rem;
+    letter-spacing: -0.02rem;
+  }
+}
