@@ -1,0 +1,78 @@
+.footer {
+  background-color: $color-dark;
+  padding: 1rem;
+  width: 90rem;
+  max-width: 100vw;
+  // height: 27.125rem;
+  flex-shrink: 0;
+  font-family: $font-poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(mobile) {
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: scroll;
+  }
+
+  @include breakpoint(desktop) {
+    height: 27.125rem;
+  }
+
+  #company-wrap {
+    align-items: flex-start;
+
+    @include breakpoint(tablet) {
+      flex-wrap: wrap;
+      height: 100vh;
+
+      aside {
+        width: 50%;
+      }
+    }
+
+    @include breakpoint(desktop) {
+      aside {
+        width: 25%;
+      }
+    }
+  }
+  
+  .section-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin: 1rem auto;
+
+    @include breakpoint(mobile) {
+      flex-direction: column;
+      margin: 1.5rem auto;
+      height: auto;
+    }
+
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  #copyright-section {
+    @include breakpoint(mobile) {
+      min-height: 150px;
+      text-wrap: wrap;
+    }
+  }
+
+  .mini-heading {
+    font-family: $font-poppins;
+  }
+
+  .link {
+    opacity: 0.6;
+    color: $color-gray;
+    display: block;
+    margin: 1rem 0rem;
+  }
+}
